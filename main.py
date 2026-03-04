@@ -305,8 +305,8 @@ class DeleteDialog(QDialog):
         # If Yes is clicked, perform the delete action.
         yes.clicked.connect(self.delete_student)
 
-        # NOTE: "No" is not connected in the original code.
-        # A common improvement is: no.clicked.connect(self.close)
+        # If No is clicked, close.
+        no.clicked.connect(self.close)
 
     def delete_student(self):
         # Delete the currently selected student record from the database.
