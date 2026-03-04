@@ -168,7 +168,7 @@ easier to maintain and expand.
 
 ### Install dependencies
 
-    pip install PyQt6
+    pip install -r requirements.txt
 
 ### Run the program
 
